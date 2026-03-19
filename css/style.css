@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', monospace, Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    padding: 1rem;
+}
+
+#background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: min(95vw, 510px);
+    text-align: center;
+    gap: 0.8rem;
+    margin: 0 auto;
+}
+
+#changecolorbutton,
+#verifychoicebutton,
+#changetextbutton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header h1 {
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: -1px;
+}
+
+
+#mybutton {
+    background-color: #000; 
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 8px; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+#mybutton:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#mybutton:active {
+    transform: translateY(0);
+}
+h1{
+  font-family: monospace;
+  border-right: 4px solid;
+  width: 16ch;
+  white-space: nowrap;
+  overflow:hidden;
+  animation: typing 2s steps(16), blinking .8s infinite;
+}
+@keyframes typing{
+  from{ width:0; }
+  to{ width:16ch; }
+}
+@keyframes blinking{
+  0%, 100% { border-color: transparent; }
+  50% { border-color: #333; }
+}
+
+.rainbow-fluid {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(110deg, #ff1536, #ff7815, #ffea00, #2dff70, #15ddff, #9255ff, #ff2d92, #ff1536);
+  background-size: 300% 300%;
+  animation: rainbowFlow 10s linear infinite;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+@keyframes rainbowFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
